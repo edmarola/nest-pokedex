@@ -56,3 +56,10 @@ $ yarn run test:e2e
 # test coverage
 $ yarn run test:cov
 ```
+
+## Production Build
+
+1. Create file `.env.prod`.
+2. Fill values for production.
+3. Create the new image 
+4. `docker compose -f docker-compose.prod.yaml --env-file .env.prod up --build -d`
